@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -12,6 +13,11 @@ function Login() {
   return (
     <div className="flex h-screen flex-col justify-center items-center border-2">
       <div className=" w-3/12 ">
+      <div className=" flex self-center justify-center items-center mb-4">
+          <Image src={"/kabsa.jpg"} width={250} height={80} />
+        </div>
+
+
         <h3 className=" text-center font-bold text-sm ">
           Please Enter your login information
         </h3>
